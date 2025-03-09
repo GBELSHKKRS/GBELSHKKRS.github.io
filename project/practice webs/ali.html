@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Sidebar</title>
+	<style>
+		/* Style the sidebar */
+		.sidebar {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+
+		/* Style links in the sidebar */
+		.sidebar a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #edcaca;
+			display: block;
+		}
+
+		/* Style links on hover */
+		.sidebar a:hover {
+			color: #f1f1f1;
+		}
+		/* Style the sidebar */
+		.sidebar {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+
+		/* Style links in the sidebar */
+		.sidebar a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #dcd0d0;
+			display: block;
+		}
+
+		/* Style links on hover */
+		.sidebar a:hover {
+			color: #f1f1f1;
+		}
+        
+		#myDiv {
+       transform: rotateY(150deg);
+     }
+     #myDiv {
+      transform: translate3d(50px, 0, 0);
+     }
+	 .sidebar {
+      transform-style: preserve-3d;
+     perspective: 1000px;
+     }
+
+.sidebar a {
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s ease-in;
+}
+
+.sidebar a:hover {
+  transform: rotateY(180deg) translate3d(0, 0, 50px);
+}
+
+
+	</style>
+
+
+	</style>
+</head>
+<body>
+
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<!-- Page content -->
+	<div style="margin-left:200px;">
+		<h1>My Page</h1>
+		<p>Welcome to my page.</p>
+	</div>
+
+</body>
+</html>
